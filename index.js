@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express= require('express');
 const app = express();
-let port= process.env.TYPEORM_PORT || 3000;
+let port= process.env.TYPEORM_PORT;
 var mysql = require('mysql');
 //connection.end();
 //seend conexion to api request
