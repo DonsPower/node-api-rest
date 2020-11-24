@@ -15,6 +15,7 @@ app.listen(()=>{
 
 var connection = mysql.createConnection({
    url: process.env.DATABASE_URL,
+   type: process.env.TYPEORM_CONECTION,
    host: process.env.TYPEORM_HOST,
    user: process.env.TYPEORM_USERNAME,
    password: process.env.TYPEORM_PASSWORD,
