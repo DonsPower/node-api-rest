@@ -22,7 +22,7 @@ function handleDisconnect() {
       user: process.env.TYPEORM_USERNAME,
       password: process.env.TYPEORM_PASSWORD,
       database: process.env.TYPEORM_DATABASE,
-     // port : process.env.TYPEORM_PORT,               
+      port : process.env.TYPEORM_PORT,               
    })
    connection.connect(function(error){
       if(error){
