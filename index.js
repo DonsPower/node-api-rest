@@ -6,9 +6,6 @@ var port = process.env.TYPEORM_PORT || 3000;
 app.use(express.static('./public'));
 //connection.end();
 //seend conexion to api request
-app.get("/", (req,res)=>{
-    res.send("HELLO WORD ");
-});
 //running
 app.listen(port, ()=>{
     console.log(`Server running in port: ${port}`);
